@@ -104,6 +104,7 @@ foreach ($this->get_transitions() as $tran) {
             </select>
         </td>
     </tr>
+    
 <!--
     <tr>
         <th scope="row">Image Size</th>
@@ -158,6 +159,13 @@ foreach ($this->get_transitions() as $tran) {
                 <?php endif; ?>
                 <a href="<?php echo admin_url('themes.php?page=custom-header'); ?>"><?php _e('Show custom header image instead.', 'gmoshowtime'); ?></a>
             </label>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">Background Color</th>
+        <td>
+            <div id="color-picker"> </div>
+            <p><input type="text" id="background-color" name="background-color" value="<?php echo esc_attr( $this->get_background_color() ); ?>" /></p>
         </td>
     </tr>
 </table>
