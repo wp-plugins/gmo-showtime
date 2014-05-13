@@ -88,7 +88,10 @@ Search and download plugin from either WordPress admin page or http://wordpress.
 == Upgrade Notice == 
 
 == Screenshots ==
-screenshot-1.png
+
+
+1. screenshot-1.png
+
 
 = Arbitrary section =
 
