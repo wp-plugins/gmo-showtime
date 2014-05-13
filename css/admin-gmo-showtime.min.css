@@ -1,5 +1,5 @@
 /**
- * GMO Showtime - v1.0
+ * GMO Showtime - v1.2
  *
  * https://github.com/GMOinternet/gmo-showtime
  * 

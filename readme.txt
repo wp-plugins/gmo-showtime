@@ -76,8 +76,11 @@ Search and download plugin from either WordPress admin page or http://wordpress.
 
 == Changelog == 
 
+= 1.2 [13/05/14] =
+* Improvement: Code renovation  
+
 = 1.1 [12/05/14] =
-* New feature: Custom Background Color Settings
+*New feature : Custom Color Sheme 
 
 = 1.0 [12/04/14] =
 * Initial version
