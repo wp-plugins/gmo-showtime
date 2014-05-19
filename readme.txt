@@ -76,11 +76,14 @@ Search and download plugin from either WordPress admin page or http://wordpress.
 
 == Changelog == 
 
+= 1.3 [19/05/14] =
+* New feature : Custom Color text
+
 = 1.2 [13/05/14] =
 * Improvement: Code renovation  
 
 = 1.1 [12/05/14] =
-*New feature : Custom Color Sheme 
+* New feature : Custom Color Scheme 
 
 = 1.0 [12/04/14] =
 * Initial version
@@ -89,9 +92,8 @@ Search and download plugin from either WordPress admin page or http://wordpress.
 
 == Screenshots ==
 
-
-1. screenshot-1.png
-
+1. Settings top page
+2. Color settings
 
 = Arbitrary section =
 
