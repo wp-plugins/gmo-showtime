@@ -164,8 +164,15 @@ foreach ($this->get_transitions() as $tran) {
     <tr>
         <th scope="row">Background Color</th>
         <td>
-            <div id="color-picker"> </div>
+            <div id="background-color-picker"> </div>
             <p><input type="text" id="background-color" name="background-color" value="<?php echo esc_attr( $this->get_background_color() ); ?>" /></p>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">Text Color</th>
+        <td>
+            <div id="text-color-picker"> </div>
+            <p><input type="text" id="text-color" name="text-color" value="<?php echo esc_attr( $this->get_text_color() ); ?>" /></p>
         </td>
     </tr>
 </table>
