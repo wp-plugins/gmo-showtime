@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-= ■GMO Showtime =
+= GMO Showtime =
 
 GMO Showtime is a slideshow plugin with 16 effects and background/text color customization.
 
@@ -22,19 +22,19 @@ Slideshow can be placed by copying & pasting a code generated while setting up t
 
 This can be used in any themes, and our WP Shop byGMO default themes are pre-coded to place slideshow in most relevant location.
 
-= ■GMO Showtime functions =
+= GMO Showtime functions =
 
 *16 effects
 
-sliceDown,　sliceDownLeft,　sliceUp,　sliceUpLeft,　sliceUpDown,　sliceUpDownLeft,　fold,
-fade,　random,　slideinRight,　slideinLeft,　boxRandom,　boxRain,　boxRainReverse,
-boxRainGrow,　boxRainGrowReverse
+sliceDown, sliceDownLeft, sliceUp, sliceUpLeft, sliceUpDown, sliceUpDownLeft, fold, 
+fade, random, slideinRight, slideinLeft, boxRandom, boxRain, boxRainReverse,
+boxRainGrow, boxRainGrowReverse
 
 *Select pages:Home,Post&Page, Archives
 *Maintenance Mode
 *Background Color & Text Color Customization
 
-= ■ GMO Showtime Resources =
+= GMO Showtime Resources =
 
 *Visit the official site for GMO Showtime
 *Support available through WordPress.org forums for GMO Showtime plugin
@@ -104,8 +104,8 @@ Search and download plugin from either WordPress admin page or http://wordpress.
 
 How to Use:
 
-Create GMO Showtime contents in the “Carousel”. They can be directly set in the carousel, or you can directly copy the option.
-Set up pages and effects within GMO Showtime “Settlings”, and insert code to the location where you wish to place a slider.
+Create GMO Showtime contents in the "Carousel". They can be directly set in the carousel, or you can directly copy the option.
+Set up pages and effects within GMO Showtime "Settlings", and insert code to the location where you wish to place a slider.
 
 Instruction:  Please refer [here](http://support.wpshop.com/) for the GMO Showtime instruction.
 
@@ -116,7 +116,7 @@ We have other plugins and themes from [WP Shop byGMO](http://wpshop.com/).
 = Can I find any documentation or a manual for this plugin? =
 
 Yes.  Please refer [here](http://support.wpshop.com/).
-Click [here](http://wpshop.com/) to visit GMO Showtime’s host, WP Shop byGMO’s website.
+Click [here](http://wpshop.com/) to visit GMO Showtime's host, WP Shop byGMO's website.
 
 == Changelog == 
 
