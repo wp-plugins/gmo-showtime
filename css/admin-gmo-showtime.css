@@ -1,17 +1,17 @@
-#gmoshowtime {
-  /* wp-admin 782px */ }
-  #gmoshowtime .helplink {
-    display: none; }
-    @media screen and (max-width: 960px) {
-      #gmoshowtime .helplink {
-        display: block; } }
-  #gmoshowtime #mainpreview {
-    margin-top: 40px; }
-  #gmoshowtime #transitions-settings {
-    margin-top: 2em; }
-  #gmoshowtime #transitions {
-    overflow: auto; }
-  #gmoshowtime h3 {
-    padding: 8px 0;
-    margin-top: 3em;
-    border-bottom: 3px double #cccccc; }
+#wpwrap { background: #ffffff; }
+
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap { background-color: #222222; z-index: 0; }
+
+#gmoshowtime { /* wp-admin 782px */ width: 930px; margin: 10px 0 0 10px; /* #gmoplugRight */ }
+#gmoshowtime:after { content: "."; display: block; clear: both; height: 0; visibility: hidden; }
+#gmoshowtime .helplink { display: none; }
+@media screen and (max-width: 960px) { #gmoshowtime .helplink { display: block; } }
+#gmoshowtime #mainpreview { margin-top: 40px; }
+#gmoshowtime #transitions-settings { margin-top: 2em; }
+#gmoshowtime h3 { font-weight: normal; border-bottom: 3px solid #ccc; padding: 0 0 6px 6px; }
+#gmoshowtime h4, #gmoshowtime .form-table th { font-size: 14px; font-weight: normal; }
+#gmoshowtime #gmoplugLeft { float: left; width: 650px; }
+#gmoshowtime #gmoplugRight { float: right; width: 212px; padding: 0 18px 15px; border: 1px solid #ccc; }
+#gmoshowtime #gmoplugRight ul li.bnrlink { text-align: right; margin: 0 0 35px; }
+#gmoshowtime #gmoplugRight ul li span { display: inline-block; width: 0; height: 0; border-style: solid; border-width: 5px 0 5px 8.7px; padding: 0 6px 0 0; border-color: transparent transparent transparent #427133; line-height: 0px; _border-color: #000000 #000000 #000000 #427133; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); }
+#gmoshowtime #gmoplugRight ul li a { color: #427133; text-decoration: none; background: url(../images/ico_link.png) left center no-repeat; padding: 0 0 0 15px; }

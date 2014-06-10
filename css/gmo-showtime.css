@@ -53,14 +53,14 @@
       margin: 0;
       font-family: 'Open Sans', ​sans-serif; }
       .theme-default .top-left .nivo-caption h2 {
-        color: inherit;
+        color: #ffffff;
         font-size: 40px;
         line-height: 1.4;
         overflow: hidden;
         max-height: 2.8em;
         margin-bottom: 0; }
         .theme-default .top-left .nivo-caption h2 a {
-          color: inherit; }
+          color: #ffffff; }
       .theme-default .top-left .nivo-caption .content {
         margin-top: 10px;
         font-size: 14px;
@@ -90,14 +90,14 @@
       margin: 0;
       font-family: 'Open Sans', ​sans-serif; }
       .theme-default .top-right .nivo-caption h2 {
-        color: inherit;
+        color: #ffffff;
         font-size: 40px;
         line-height: 1.4;
         overflow: hidden;
         max-height: 2.8em;
         margin-bottom: 0; }
         .theme-default .top-right .nivo-caption h2 a {
-          color: inherit; }
+          color: #ffffff; }
       .theme-default .top-right .nivo-caption .content {
         margin-top: 10px;
         font-size: 14px;
@@ -127,14 +127,14 @@
       margin: 0;
       font-family: 'Open Sans', ​sans-serif; }
       .theme-default .bottom-left .nivo-caption h2 {
-        color: inherit;
+        color: #ffffff;
         font-size: 40px;
         line-height: 1.4;
         overflow: hidden;
         max-height: 2.8em;
         margin-bottom: 0; }
         .theme-default .bottom-left .nivo-caption h2 a {
-          color: inherit; }
+          color: #ffffff; }
       .theme-default .bottom-left .nivo-caption .content {
         margin-top: 10px;
         font-size: 14px;
@@ -164,14 +164,14 @@
       margin: 0;
       font-family: 'Open Sans', ​sans-serif; }
       .theme-default .bottom-right .nivo-caption h2 {
-        color: inherit;
+        color: #ffffff;
         font-size: 40px;
         line-height: 1.4;
         overflow: hidden;
         max-height: 2.8em;
         margin-bottom: 0; }
         .theme-default .bottom-right .nivo-caption h2 a {
-          color: inherit; }
+          color: #ffffff; }
       .theme-default .bottom-right .nivo-caption .content {
         margin-top: 10px;
         font-size: 14px;
@@ -202,13 +202,14 @@
       margin: 0;
       font-family: 'Open Sans', ​sans-serif; }
       .theme-default .left-photo-right .nivo-caption h2 {
+        color: #ffffff;
         font-size: 40px;
         line-height: 1.4;
         overflow: hidden;
         max-height: 2.8em;
         margin-bottom: 0; }
         .theme-default .left-photo-right .nivo-caption h2 a {
-          color: inherit; }
+          color: #ffffff; }
       .theme-default .left-photo-right .nivo-caption .content {
         margin-top: 10px;
         font-size: 14px;
@@ -264,14 +265,14 @@
       margin: 0;
       font-family: 'Open Sans', ​sans-serif; }
       .theme-default .right-photo-left .nivo-caption h2 {
-        color: inherit;
+        color: #ffffff;
         font-size: 40px;
         line-height: 1.4;
         overflow: hidden;
         max-height: 2.8em;
         margin-bottom: 0; }
         .theme-default .right-photo-left .nivo-caption h2 a {
-          color: inherit; }
+          color: #ffffff; }
       .theme-default .right-photo-left .nivo-caption .content {
         margin-top: 10px;
         font-size: 14px;

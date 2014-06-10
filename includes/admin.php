@@ -1,15 +1,18 @@
+<?php $plugin_file_url = plugins_url() . '/'; ?>
 <div id="gmoshowtime" class="wrap">
 
 <h2>GMO Showtime</h2>
 
 <p class="helplink"><a href="#setup-help"><?php _e('How to Setup', 'gmoshowtime'); ?></a></p>
 
+<div id="gmoplugLeft">
+
 <div id="alpha">
 
 <form id="save-social" method="post" action="<?php echo esc_attr($_SERVER['REQUEST_URI']); ?>" style="margin-bottom:3em;">
 <?php wp_nonce_field('gmoshowtime', 'gmoshowtime'); ?>
 
-<h3 style="margin-top: 0;"><?php _e('Preview', 'gmoshowtime'); ?></h3>
+<h3><?php _e('Preview', 'gmoshowtime'); ?></h3>
 
 <div id="mainpreview">
 <?php $this->get_preview_contents(); ?>
@@ -164,15 +167,8 @@ foreach ($this->get_transitions() as $tran) {
     <tr>
         <th scope="row">Background Color</th>
         <td>
-            <div id="background-color-picker"> </div>
+            <div id="color-picker"> </div>
             <p><input type="text" id="background-color" name="background-color" value="<?php echo esc_attr( $this->get_background_color() ); ?>" /></p>
-        </td>
-    </tr>
-    <tr>
-        <th scope="row">Text Color</th>
-        <td>
-            <div id="text-color-picker"> </div>
-            <p><input type="text" id="text-color" name="text-color" value="<?php echo esc_attr( $this->get_text_color() ); ?>" /></p>
         </td>
     </tr>
 </table>
@@ -200,5 +196,31 @@ foreach ($this->get_transitions() as $tran) {
 </div><!-- #beta -->
 
 <br clear="all" />
+
+</div><!-- #gmoplugLeft -->
+
+<div id="gmoplugRight">
+<h3>WordPress Themes</h3>
+<ul>
+<li><a href="https://wordpress.org/themes/kotenhanagara" target="_blank">Kotehanagara</a></li>
+<li><a href="https://wordpress.org/themes/madeini" target="_blank">Madeini</a></li>
+<li><a href="https://wordpress.org/themes/azabu-juban" target="_blank">Azabu Juban</a></li>
+</ul>
+<a href="http://wpshop.com/themes?=vn_wps_showtime" target="_blank"><img src="<?php echo ($plugin_file_url.'gmo-showtime/images/'.'wpshop_bnr_themes.png'); ?>" alt="WPShop by GMO WordPress Themes for Everyone!"></a>
+<ul><li class="bnrlink"><a href="http://wpshop.com/themes?=wps_showtime" target="_blank">Visit WP Shop Themes</a></li></ul>
+<h3>WordPress Plugins</h3>
+<ul>
+<li><a href="http://wordpress.org/plugins/gmo-showtime/" target="_blank">GMO Showtime</a></li>
+<li><a href="http://wordpress.org/plugins/gmo-font-agent/" target="_blank">GMO Font Agent</a></li>
+<li><a href="http://wordpress.org/plugins/gmo-share-connection/" target="_blank">GMO Share Connection</a></li>
+<li><a href="http://wordpress.org/plugins/gmo-ads-master/" target="_blank">GMO Ads Master</a></li>
+<li><a href="http://wordpress.org/plugins/gmo-page-transitions/" target="_blank">GMO Page Trasitions</a></li>
+<li><a href="http://wordpress.org/plugins/gmo-go-to-top/" target="_blank">GMO Go to Top</a></li>
+</ul>
+<a href="http://wpshop.com/plugins?=vn_wps_showtime" target="_blank"><img src="<?php echo ($plugin_file_url.'gmo-showtime/images/'.'wpshop_bnr_plugins.png'); ?>" alt="WPShop by GMO WordPress Plugins for Everyone!"></a>
+<ul><li class="bnrlink"><a href="http://wpshop.com/plugins?=wps_showtime" target="_blank">Visit WP Shop Plugins</a></li></ul>
+<h3>Contact Us</h3>
+<a href="http://support.wpshop.com/?page_id=15" target="_blank"><img src="<?php echo ($plugin_file_url.'gmo-showtime/images/'.'wpshop_logo.png'); ?>" alt="WPShop by GMO"></a>
+</div><!-- #gmoplugRight -->
 
 </div><!-- #gmoshowtime -->
