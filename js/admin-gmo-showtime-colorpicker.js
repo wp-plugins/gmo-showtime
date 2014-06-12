@@ -1,3 +1,4 @@
 (function($){
-	$("#color-picker").farbtastic("#background-color");
+	$("#background-color-picker").farbtastic("#background-color");
+	$("#text-color-picker").farbtastic("#text-color");
 })(jQuery);

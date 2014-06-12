@@ -3,7 +3,7 @@
  * Plugin Name: GMO Showtime
  * Plugin URI:  
  * Description: GMO Showtime slider plugin gives cool effects to the slider in a snap. The control screen is simple, for anyone to easily use. Express user's originality with fully customizable link and color as well as 16 slider effects in 6 different layouts,
- * Version:     1.3
+ * Version:     1.4
  * Author:      WP Shop byGMO
  * Author URI:  http://www.wpshop.com
  * License:     GPLv2
@@ -89,7 +89,8 @@ private $transitions = array(
 );
 private $default_image_size = 'gmoshowtime-image';
 private $default_transition = 'fade';
-private $default_background_color = '#0058AE';
+private $default_background_color = '#0058ae';
+private $default_text_color = '#ffffff';
 
 function __construct()
 {
@@ -183,7 +184,7 @@ public function get_slider_contents($atts = array())
 
 	$class = get_option('gmoshowtime-css-class', $this->get_default_css_class());
 	
-	$backgroundcolor = $this->get_background_color();
+	$style = "background-color:".$this->get_background_color().";color:". $this->get_text_color().";";
 	
 	if ( $class == "left-photo-right" || $class == "right-photo-left" ) {
 		$image_size = 'gmoshowtime-image-medium';
@@ -218,9 +219,9 @@ public function get_slider_contents($atts = array())
     $html .= "\n<!-- Start GMO Showtime-->\n";
     $html .= "<div id=\"gmo-show-time\" class=\"slider-wrapper theme-default\">\n";
     $html .= sprintf(
-        '<div class="%s" style="background-color:%s"><div class="slider-box"><div class="showtime nivoSlider" data-columns="%d" data-transition="%s" data-show_title="%d">',
+        '<div class="%s" style="%s"><div class="slider-box"><div class="showtime nivoSlider" data-columns="%d" data-transition="%s" data-show_title="%d">',
         esc_attr( $class ),
-        $backgroundcolor,
+        esc_attr( $style ),
         $columns,
         $transition,
         $show_title
@@ -246,7 +247,6 @@ public function get_slider_contents($atts = array())
         $slide = str_replace("%content%", esc_html($img['content']), $slide);
         $slide = str_replace("%link%", esc_url($img['link']), $slide);
         $slide = str_replace("%image%", esc_url($img['image']), $slide);
-		$slide = str_replace("%backgroundcolor%", $backgroundcolor, $slide);
         $html .= $slide;
     }
 
@@ -299,6 +299,10 @@ public function admin_init()
             }
 			if(isset($_POST['background-color']) && $_POST['background-color'] && $_POST['background-color'] != $this->default_background_color) {
 				update_option('gmoshowtime-background-color', $_POST['background-color']);
+			}
+			
+			if(isset($_POST['text-color']) && $_POST['text-color'] && $_POST['text-color'] != $this->default_text_color) {
+				update_option('gmoshowtime-text-color', $_POST['text-color']);
 			}
 			
 			wp_redirect('options-general.php?page=gmoshowtime');
@@ -449,6 +453,16 @@ public function get_background_color()
     
 }
 
+public function get_text_color()
+{
+	if(get_option('gmoshowtime-text-color')) {
+		return get_option('gmoshowtime-text-color');
+	} else {
+		return $this->default_text_color;
+	}
+    
+}
+
 private function get_default_transition()
 {
     return apply_filters('gmoshowtime_default_transition', $this->default_transition);
@@ -497,12 +511,12 @@ private function get_default_columns()
 
 private function get_preview_contents()
 {
-	$backgroundcolor = $this->get_background_color();
+	$style = "background-color:".$this->get_background_color().";color:". $this->get_text_color().";";
     echo "<div class=\"slider-wrapper theme-default\">\n";
     printf(
-        '<div class="%s" style="background-color:%s"><div class="slider-box"><div class="showtime nivoSlider" data-columns="%d" data-transition="%s" data-show_title="%d">',
+        '<div class="%s" style="%s"><div class="slider-box"><div class="showtime nivoSlider" data-columns="%d" data-transition="%s" data-show_title="%d">',
         esc_attr(get_option('gmoshowtime-css-class', $this->get_default_css_class())),
-        $backgroundcolor,
+        esc_attr( $style ),
         $this->get_default_columns(),
         get_option('gmoshowtime-transition', $this->get_default_transition()),
         $this->get_default_show_title()
