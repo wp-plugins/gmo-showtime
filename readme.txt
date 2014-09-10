@@ -8,7 +8,7 @@ Contributors: Takeaki Nagashima
 Donation Link:
 Tags: Slider, Simple, Effects
 Requires at least: 3.8.1
-Tested up to: 3.9 
+Tested up to: 4.0 
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
